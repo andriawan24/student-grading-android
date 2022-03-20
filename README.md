@@ -10,10 +10,9 @@ Aplikasi Sistem Penilaian Mahasiswa ini bertujuan untuk menyimpan informasi nila
 - Nilai Ujian Akhir Semester sebanyak 40%
 
 Setiap mahasiswa memiliki 2 macam penilaian
-1. Nilai Keseluruhan
-Nilai keseluruhan diambil dari nilai rata-rata keseluruhan mata kuliah dari keempat kategori yang ada, kemudian dijumlahkan sesuai dengan komposisinya.
-2. Nilai per Mata Kuliah
-Nilai per mata kuliah diambil dari setiap mata kuliah, kemudian dijumlahkan sesuai dengan komposisi yang ada
+1. ```Nilai Keseluruhan``` : diambil dari nilai rata-rata keseluruhan mata kuliah dari keempat kategori yang ada, kemudian dijumlahkan sesuai dengan komposisinya.
+
+2. ```Nilai per Mata Kuliah``` : diambil dari setiap mata kuliah, kemudian dijumlahkan sesuai dengan komposisi yang ada
 
 Format penilaian terdiri dari dua jenis yaitu angka yang terdiri dari 1-100, dan huruf yang terdiri dari a, b+, b, b-, dan C. Ketentuan penilaian
 
