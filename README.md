@@ -1,5 +1,5 @@
 # Sistem Penilaian Mahasiswa
-Aplikasi berbasis Android yang dibangun menggunakan bahasa pemrograman Kotlin. Dibuat untuk memenuhi salah satu tugas Ujian Tengah Semester dari mata kuliah Konstruksi Perangkat Lunak (RL212). 
+Aplikasi berbasis Android yang dibangun menggunakan bahasa pemrograman Kotlin. Dibuat untuk memenuhi salah satu tugas Ujian Tengah Semester dari mata kuliah Konstruksi Perangkat Lunak (RL212). Aplikasi dapat diunduh pada link berikut melalui [Google Drive](https://drive.google.com/file/d/1RT3niytkQtWu34qrTEAwGB--P-RapKDX/view?usp=sharing)
 
 
 ## Deskripsi Aplikasi
@@ -14,16 +14,19 @@ Setiap mahasiswa memiliki 2 macam penilaian
 
 2. ```Nilai per Mata Kuliah``` : diambil dari setiap mata kuliah, kemudian dijumlahkan sesuai dengan komposisi yang ada
 
-Format penilaian terdiri dari dua jenis yaitu angka yang terdiri dari 1-100, dan huruf yang terdiri dari a, b+, b, b-, dan C. Ketentuan penilaian
+Format penilaian terdiri dari dua jenis yaitu angka yang terdiri dari 1-100, dan predikat nilai dengan jangkauan A hingga E. Ketentuan penilaian lebih lengkap ada pada tabel di bawah ini.
 
-| Nilai | Range |
-|-------|-------------|
-| A     | > 90        |
-| A-    | 85 - 90     |
-| B+    | 80 - 84     |
-| B     | 75-79       |
-| B-    | 70-74       |
-| C     | < 70        |
+| Predikat | Nilai      | Keterangan                                                                                                                       |
+|----------|------------|----------------------------------------------------------------------------------------------------------------------------------|
+| A        |    > 91     | Sangat baik dan sempurna. Mengikuti seluruh perkuliahan dan menerapkan materi dengan sangat baik                                 |
+| A-       |    86-91    | Baik dan sempurna. Dapat mengikuti seluruh perkuliahan dan menerapkan materi dengan cukup baik                                   |
+| B+       |    81-85    | Sangat baik. Mengikuti seluruh perkuliahan dengan baik, tetapi dalam penerapan materi belum dapat dikatakan sempurna             |
+| B        |    76-80    | Baik. Mengikuti seluruh perkuliahan dengan baik, tetapi dalam penerapan materi belum mampu menerapkan seluruh materi perkuliahan |
+| B-       |    71-75    | Cukup baik. Mengikuti perkuliahan dengan baik, tetapi belum dapat menerapkan materi perkuliahan                                  |
+| C+       |    66-70    | Cukup. Selalu hadir dalam perkuliahan tetapi masih terlihat kesulitan memahami isi dari materi perkuliahan                       |
+| C        |    60-65    | Cukup. Selalu hadir dalam perkuliahan tetapi masih sangatt kesulitan memahami isi dari materi perkuliahan                        |
+| D        |    55-59    | Kurang baik. Tidak terlihat aktif dan tidak memahami sama sekali materi di dalam perkuliahan                                     |
+| E        |    < 55     | Buruk. Kehadiran kurang dari syarat minimum dan masih sangat kesulitan dalam mengikuti perkuliahan                               |
 
 ## Design Architecture
 
