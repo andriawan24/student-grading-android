@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.1305" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.1015" />
+        <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.1015" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/custom_delete_grade.xml" value="0.14722222222222223" />
+        <entry key="app/src/main/res/layout/custom_dialog_fragment.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/custom_edit_grade.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/custom_edit_or_delete_fragment.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/custom_edit_or_delete_student_fragment.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/custom_help_dialog_fragment.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_grade_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_grade_form.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_loading.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/fragment_student_form.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/item_grade.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/item_grades.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/item_student.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/layout/view_data_not_available.xml" value="0.2520833333333333" />
+        <entry key="app/src/main/res/menu/detail_menu.xml" value="0.2520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

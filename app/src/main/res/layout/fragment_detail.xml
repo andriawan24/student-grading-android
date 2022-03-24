@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.detail.DetailFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/design_default_color_background">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIconTint="@color/primary_text_color"
+            app:menu="@menu/detail_menu"
+            app:titleTextColor="@color/primary_text_color"
+            app:navigationIcon="@drawable/ic_back">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/primary_text_color"
+                android:text="@string/detail_mahasiswa" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/primary_text_color"
+                tools:text="Naufal Fawwaz Andriawan" />
+
+            <TextView
+                android:id="@+id/nim_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginHorizontal="@dimen/medium_margin"
+                android:textSize="14sp"
+                tools:text="NIM 20000026" />
+
+            <TextView
+                android:id="@+id/major_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginHorizontal="@dimen/medium_margin"
+                android:textSize="14sp"
+                tools:text="Jurusan \u2022 Angkatan" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:textColor="@color/primary_text_color"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/totalGrade_materialCardView"
+                    android:foreground="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_marginVertical="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="10dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/small_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/gradeEmpty_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="18sp"
+                            tools:visibility="gone"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/primary_text_color"
+                            android:text="Belum ada nilai" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/gradeAvaliable_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/scoreText_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="36sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/primary_text_color"
+                                tools:text="B+" />
+
+                            <TextView
+                                android:id="@+id/totalScore_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/small_margin"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/poppins_medium"
+                                tools:text="Total Score: 90" />
+
+                            <TextView
+                                android:id="@+id/keteranganText_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/small_margin"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/poppins"
+                                tools:text="Total Score: 90" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/gradesDetail_recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:itemCount="3"
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/medium_margin"
+                                android:overScrollMode="never"
+                                tools:listitem="@layout/item_grade" />
+
+                            <TextView
+                                android:id="@+id/detailScore_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/primary_color"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="12sp"
+                                android:text="@string/lihat_detail" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tasks_materialCardView"
+                    android:layout_width="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:background="?android:selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="10dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/small_margin"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/primary_text_color"
+                            android:text="@string/nilai_tugas" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_next"
+                            app:tint="@color/primary_text_color" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/quizGrade_materialCardView"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_marginVertical="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="10dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/small_margin"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/primary_text_color"
+                            android:text="@string/nilai_quiz" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            app:tint="@color/primary_text_color"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_next" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/utsGrade_materialCardView"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_marginVertical="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="10dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/small_margin"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/primary_text_color"
+                            android:text="@string/nilai_uts" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            app:tint="@color/primary_text_color"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_next" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/uasGrade_materialCardView"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/big_margin"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="10dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/small_margin"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/primary_text_color"
+                            android:text="@string/nilai_uas" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            app:tint="@color/primary_text_color"
+                            android:src="@drawable/ic_next" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addGrade_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white"
+        app:backgroundTint="@color/primary_color"
+        android:layout_margin="@dimen/medium_margin"
+        android:contentDescription="@string/app_name" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

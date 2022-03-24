@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "474300755378",
+    "project_id": "sistem-penilaian-mahasiswa",
+    "storage_bucket": "sistem-penilaian-mahasiswa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474300755378:android:66cd5f3dad27d5772c48ab",
+        "android_client_info": {
+          "package_name": "com.andriawan.sistempenilaianmahasiswa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474300755378-rai3g9ke37kim4lu5vlnlsaihe017fnl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andriawan.sistempenilaianmahasiswa",
+            "certificate_hash": "1b28a3fa95ebe1fb9bd413bf69ee63c3f6e43850"
+          }
+        },
+        {
+          "client_id": "474300755378-79l1jrrii9j02pvuir8noa3d7op7nngh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATbUQoWOdCDVsIsfhjTfDICkXqltwWCc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474300755378-79l1jrrii9j02pvuir8noa3d7op7nngh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
